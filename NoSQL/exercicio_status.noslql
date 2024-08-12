@@ -1,0 +1,3 @@
+db.biblioteca.find({pageCount: {$lte: 300}},{status:"MEAP"}).sort({pageCount: 1})
+
+db.biblioteca.find({pageCount: {$lte: 300}},{status:"MEAP"}).sort({pageCount: 1}).count()  =  187

@@ -1,0 +1,3 @@
+db.biblioteca.find({title: {$regex: /MongoDB|SQL Server/}})
+
+db.biblioteca.find({title: {$regex: /MongoDB|SQL Server/}}).count()  =  10

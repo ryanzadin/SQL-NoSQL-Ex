@@ -1,0 +1,3 @@
+db.biblioteca.find({longDescription:{$regex: /.*obile|.*ava/}},{longDescription: true})
+
+db.biblioteca.find({longDescription:{$regex: /.*obile|.*ava/}},{longDescription: true}).count()  =  145
